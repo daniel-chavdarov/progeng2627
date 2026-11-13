@@ -1,0 +1,6 @@
+prestigious     expensive
+innovative      untested
+proactive       independent
+team-player     obedient
+challenging     difficult
+vibrant         noisy
