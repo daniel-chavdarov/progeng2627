@@ -55,7 +55,8 @@ bool check_word(std::string check, std::string word, int& loc){ // check is what
             n = 0;
             loc = -1;
             if(check[i] == word[0]){    // this is for the case that the first letter of the word is repeated twice in a row
-                n += 1;                 // for example if the word being searched for is "apple" and check begins with "aa..."
+                n += 1;
+                loc = i;                // for example if the word being searched for is "apple" and check begins with "aa..."
             }                           // this will count the second a as the beginning of a possible "apple"
         }
     }
@@ -129,7 +130,7 @@ void find_words(
 int main(){
 
     std::vector<std::string> grid = {
-        "xappleg",
+        "aappleg",
         "dzeazkg",
         "zwazzbx",
         "dxnqzoy",
